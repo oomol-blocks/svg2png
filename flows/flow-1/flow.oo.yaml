@@ -1,0 +1,24 @@
+nodes:
+  - node_id: image_preview#1
+    title: "Image preview #1"
+    inputs_from:
+      - handle: image_path
+        from_node:
+          - node_id: svg-to-png#1
+            output_handle: png
+    task: oomol-preview::image_preview
+  - node_id: svg-to-png#1
+    task: self::svg-to-png
+    inputs_from:
+      - handle: width
+        value: 120
+      - handle: height
+        value: 120
+      - handle: quality
+        value: null
+      - handle: background
+        value: null
+      - handle: svg
+        value: /oomol-driver/oomol-storage/svg-to-png copy.svg
+      - handle: outputDir
+        value: /oomol-driver/oomol-storage/New Folder/output

@@ -1,0 +1,41 @@
+ui:
+  default_width: 450
+inputs_def:
+  - handle: svg
+    description: Input
+    json_schema:
+      type: string
+      ui:widget: file
+  - handle: outputDir
+    json_schema:
+      type: string
+      ui:widget: dir
+  - handle: width
+    json_schema:
+      type: number
+    nullable: true
+  - handle: height
+    json_schema:
+      type: number
+    nullable: true
+  - handle: quality
+    json_schema:
+      type: number
+    nullable: true
+  - handle: background
+    json_schema:
+      type: string
+    nullable: true
+outputs_def:
+  - handle: png
+    description: Output
+    json_schema:
+      type: string
+      ui:widget: file
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+    spawn: false
+title: svg-to-png
+icon: "./icons/svg-to-png.svg"
