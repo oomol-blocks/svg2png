@@ -4,21 +4,21 @@ nodes:
     inputs_from:
       - handle: image_path
         from_node:
-          - node_id: svg-to-png#1
-            output_handle: png
+          []
     task: oomol-preview::image_preview
-  - node_id: svg-to-png#1
-    task: self::svg-to-png
+  - node_id: svg-to-png#3
+    title: "SVG to PNG Converter #3"
     inputs_from:
-      - handle: width
-        value: 120
-      - handle: height
-        value: 120
-      - handle: quality
-        value: null
-      - handle: background
-        value: null
       - handle: svg
-        value: /oomol-driver/oomol-storage/svg-to-png copy.svg
+        value: /oomol-driver/oomol-storage/test-svgs/test-icon.svg
       - handle: outputDir
-        value: /oomol-driver/oomol-storage/New Folder/output
+        value: /oomol-driver/oomol-storage/audio
+      - handle: width
+        value: null
+      - handle: height
+        value: null
+      - handle: quality
+        value: 90
+      - handle: background
+        value: transparent
+    task: self::svg-to-png

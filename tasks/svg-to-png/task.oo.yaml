@@ -2,40 +2,63 @@ ui:
   default_width: 450
 inputs_def:
   - handle: svg
-    description: Input
+    description: SVG file path, SVG content string, or array of SVG files for batch
+      processing
     json_schema:
       type: string
       ui:widget: file
   - handle: outputDir
+    description: Output directory for PNG file
     json_schema:
       type: string
       ui:widget: dir
   - handle: width
+    description: Output width in pixels (maintains aspect ratio if height not specified)
     json_schema:
       type: number
+      minimum: 1
+      maximum: 10000
+    value:
     nullable: true
   - handle: height
+    description: Output height in pixels (maintains aspect ratio if width not specified)
     json_schema:
       type: number
+      minimum: 1
+      maximum: 10000
+    value:
     nullable: true
   - handle: quality
+    description: PNG quality (1-100, higher is better quality)
     json_schema:
       type: number
+      minimum: 1
+      maximum: 100
+    value: 90
     nullable: true
   - handle: background
+    description: Background color (transparent, hex, rgb, or color name)
     json_schema:
       type: string
+    value: transparent
     nullable: true
 outputs_def:
   - handle: png
-    description: Output
+    description: Path to the generated PNG file(s) - single path for single input,
+      array for batch processing
     json_schema:
-      type: string
-      ui:widget: file
+      oneOf:
+        - type: string
+          ui:widget: file
+        - type: array
+          items:
+            type: string
 executor:
   name: nodejs
   options:
     entry: main.ts
     spawn: false
-title: svg-to-png
-icon: "./icons/svg-to-png.svg"
+title: SVG to PNG Converter
+icon: ":carbon:image:"
+description: "Convert SVG files or content to high-quality PNG images with
+  customizable dimensions, quality, and background options"
