@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: poetry add pandas
@@ -9,5 +9,7 @@ dependencies:
   oomol-preview: 0.0.5
 icon: ./icon.png
 name: svg2png
-description: SVG to PNG Converter
-displayName: svg-to-png
+description: "%svg-png%"
+displayName: "%svg-to-png%"
+repository: https://github.com/oomol-blocks/svg2png
+releaseNotes: update
