@@ -1,13 +1,13 @@
 nodes:
   - node_id: image_preview#1
-    title: "Image preview #1"
+    title: "%image-preview-1%"
     inputs_from:
       - handle: image_path
         from_node:
           []
     task: oomol-preview::image_preview
   - node_id: svg-to-png#3
-    title: "SVG to PNG Converter #3"
+    title: "%svg-to-png-converter-3%"
     inputs_from:
       - handle: svg
         value: /oomol-driver/oomol-storage/test-svgs/test-icon.svg

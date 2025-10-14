@@ -1,4 +1,14 @@
 {
   "svg-to-png": "SVG to PNG",
-  "svg-png": "This project provides a powerful and easy-to-use converter that can convert SVG files to PNG format while maintaining excellent image quality. Whether you are a designer, content creator, or business professional, this tool can help you convert vector graphics into raster images for a variety of applications."
+  "svg-png": "This project provides a powerful and easy-to-use converter that can convert SVG files to PNG format while maintaining excellent image quality. Whether you are a designer, content creator, or business professional, this tool can help you convert vector graphics into raster images for a variety of applications.",
+  "image-preview-1": "Image preview #1",
+  "svg-to-png-converter-3": "SVG to PNG Converter #3",
+  "svg-to-png-converter": "SVG to PNG Converter",
+  "convert-svg-files-or-content-to-high-quality-png-images-with-cus": "Convert SVG files or content to high-quality PNG images with customizable dimensions, quality, and background options",
+  "svg-file-path-svg-content-string-or-array-of-svg-files-for-batch": "SVG file path, SVG content string, or array of SVG files for batch processing",
+  "output-directory-for-png-file": "Output directory for PNG file",
+  "output-width-in-pixels-maintains-aspect-ratio-if-height-not-spec": "Output width in pixels (maintains aspect ratio if height not specified)",
+  "output-height-in-pixels-maintains-aspect-ratio-if-width-not-spec": "Output height in pixels (maintains aspect ratio if width not specified)",
+  "png-quality-1-100-higher-is-better-quality": "PNG quality (1-100, higher is better quality)",
+  "background-color-transparent-hex-rgb-or-color-name": "Background color (transparent, hex, rgb, or color name)"
 }

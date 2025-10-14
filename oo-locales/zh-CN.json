@@ -1,4 +1,14 @@
 {
   "svg-to-png": "SVG 转 PNG",
-  "svg-png": "此项目提供了一个强大且易于使用的转换器，可将 SVG 文件转换为 PNG 格式，同时保持出色的图像质量。无论您是设计师、内容创作者还是商业专业人士，此工具都能帮助您将矢量图形转换为栅格图像，适用于各种应用场景。"
+  "svg-png": "此项目提供了一个强大且易于使用的转换器，可将 SVG 文件转换为 PNG 格式，同时保持出色的图像质量。无论您是设计师、内容创作者还是商业专业人士，此工具都能帮助您将矢量图形转换为栅格图像，适用于各种应用场景。",
+  "image-preview-1": "图片预览 #1",
+  "svg-to-png-converter-3": "SVG 转 PNG 转换器 #3",
+  "svg-to-png-converter": "SVG 转 PNG 转换器",
+  "convert-svg-files-or-content-to-high-quality-png-images-with-cus": "将 SVG 文件或内容转换为高质量的 PNG 图像，并可自定义尺寸、质量和背景选项。",
+  "svg-file-path-svg-content-string-or-array-of-svg-files-for-batch": "SVG 文件路径、SVG 内容字符串，或用于批量处理的 SVG 文件数组",
+  "output-directory-for-png-file": "PNG 文件的输出目录",
+  "output-width-in-pixels-maintains-aspect-ratio-if-height-not-spec": "输出宽度（像素）（如果未指定高度，则保持纵横比）",
+  "output-height-in-pixels-maintains-aspect-ratio-if-width-not-spec": "输出高度（像素）（如果未指定宽度，则保持纵横比）",
+  "png-quality-1-100-higher-is-better-quality": "PNG质量（1-100，数值越高质量越好）",
+  "background-color-transparent-hex-rgb-or-color-name": "背景颜色（透明、十六进制、RGB 或颜色名称）"
 }
